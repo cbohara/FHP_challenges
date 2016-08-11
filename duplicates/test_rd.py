@@ -2,7 +2,7 @@ import unittest
 from remove_duplicates import remove_duplicates
 
 class RDTestCase(unittest.TestCase):
-    """Tests for 'remove_duplicates.py'."""
+    """Test for 'remove_duplicates.py'."""
 
     def test_output(self):
         """Are all duplicates removed?"""

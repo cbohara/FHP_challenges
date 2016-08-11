@@ -8,5 +8,3 @@ def reverse_string(word):
         reverse.insert(0, letter)
     reverse = ''.join(reverse)
     return reverse
-
-print(reverse_string("hello"))
