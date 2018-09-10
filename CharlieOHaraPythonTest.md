@@ -135,4 +135,4 @@ for x[-1] in x:
 ```
 
 ### Why? 
-Slice assignment replaces x[-1] with the current iteration of the iterable.
+Slice assignment replaces x[-1] (the last element in the list) with the current iteration of the iterable.
