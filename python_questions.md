@@ -1,5 +1,4 @@
-# Charlie O'Hara Python Test
-
+# Python Questions
 
 ## 0
 ### Why does the following program print `prime` for input `6`? 
