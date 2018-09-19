@@ -1,3 +1,5 @@
+import numpy as np
+
 class RangeFilter:
 	def __init__(self, range_min_value, range_max_value):
 		self.range_min_value = range_min_value
@@ -12,4 +14,4 @@ class RangeFilter:
 				filtered_scan.append(self.range_max_value)
 			else:
 				filtered_scan.append(value)
-		return filtered_scan
+		return np.array(filtered_scan)
