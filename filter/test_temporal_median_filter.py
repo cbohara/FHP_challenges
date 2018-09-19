@@ -2,6 +2,7 @@ import pytest
 import numpy as np
 from temporal_median_filter import TemporalMedianFilter
 
+
 @pytest.fixture()
 def temporal_median_filter():
 	return TemporalMedianFilter(3)

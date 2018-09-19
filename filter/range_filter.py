@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class RangeFilter:
 	def __init__(self, range_min_value, range_max_value):
 		self.range_min_value = range_min_value
