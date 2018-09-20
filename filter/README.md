@@ -8,10 +8,7 @@ You have been assigned to write filters to reduce noise in the data coming from 
 
 #### Temporal median filter
 
-* The temporal median filter returns the median of the current and the previous D scans:
-
-```y(t) = median(x(t), x(t-1), ... x(t-D))```
-
+* The temporal median filter returns the median of the current and the previous D scans.
 * The number of previous scans D is a parameter that should be given when creating a new temporal median filter.
 * Note that, although the update method will receive a single scan, the returned array depends on the values of previous scans.
 * Note also that the for the first D scans, the filter is expected to return the median of all the scans so far.
