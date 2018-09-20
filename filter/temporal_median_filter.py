@@ -31,7 +31,7 @@ class TemporalMedianFilter:
 		Returns
 		-------
 		numpy array
-			Filtered array containing median value of each element.
+			Filtered array containing median value of each element from previous D scans.
 		"""
 
 		if self.input_scans is None:
