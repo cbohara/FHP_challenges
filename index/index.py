@@ -1,6 +1,6 @@
 def diff_index(item1, item2):
 	"""
-	Return the index where two iterables diverge, or -1 if they are equal
+	Return the index where two iterables diverge in length, or -1 if they are equal
 	"""
 	len_diff = len(item1) - len(item2)
 	if len_diff > 0:
