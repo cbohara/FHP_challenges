@@ -1,5 +1,5 @@
 import pytest
-from string_index import string_diff_index
+from index import string_diff_index, list_diff_index
 
 def test_string_diff_index_equal_strings():
 	assert string_diff_index("abc", "abc") == -1
@@ -34,6 +34,6 @@ def test_list_diff_index_unequal_list_len_longer_first():
 	assert list_diff_index(list1, list2) == (2, -1)
 
 def test_list_diff_index_unequal_list_len_longer_first():
-	list1 = ["abc", "def"]
-	list2 = ["abc", "def", "ghi"]
-	assert list_diff_index(list1, list2) == (2, -1)
+	list1 = ["abc", "def", "ghi"]
+	list2 = ["abc", "def", "ghi", "lmn"]
+	assert list_diff_index(list1, list2) == (3, -1)
