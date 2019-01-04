@@ -1,5 +1,5 @@
-def binary_search(sequence, target):
-	"""Use binary search to find target value in a sorted sequence"""
+def binary_search(iterable, target):
+	"""Determine if target value is in sorted iterable containing numbers"""
 	while not found:
 		middle = len(sequence)//2
 		if sequence[middle] > target:
