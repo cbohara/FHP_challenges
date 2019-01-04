@@ -1,7 +1,6 @@
 def binary_search(iterable, target):
 	"""Determine if target value is in sorted iterable containing numbers"""
 	sorted_iterable = sorted(iterable)
-
 	low = 0
 	high = len(sorted_iterable) - 1
 	while low <= high:
