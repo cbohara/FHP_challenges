@@ -1,0 +1,166 @@
+elapsed time: 5 minutes, 46 seconds
+
+total active matches: 88345
+
+sample output: 
+[
+    {
+        "firstname": "Roger",
+        "lastname": "Aaberg",
+        "specialty": "Orthopedics",
+        "ext_active_status": "active",
+        "location": "belk",
+        "ext_classification": "Contributor",
+        "api_id": 111941,
+        "api_version": "v1",
+        "ext_last_active_date": "2017-01-04",
+        "int_last_active_date": "2016-12-25",
+        "user_id": 100430,
+        "int_active_status": "inactive"
+    },
+    {
+        "firstname": "Joseph",
+        "lastname": "Aadland",
+        "specialty": "Orthopedics",
+        "ext_active_status": "active",
+        "location": "concord",
+        "ext_classification": "Contributor",
+        "api_id": 15921,
+        "api_version": "v1",
+        "ext_last_active_date": "2017-01-08",
+        "int_last_active_date": "2017-01-31",
+        "user_id": 437560,
+        "int_active_status": "active"
+    },
+    {
+        "firstname": "Kimberly",
+        "lastname": "Aaron",
+        "specialty": "Cardiology",
+        "ext_active_status": "active",
+        "location": "avon",
+        "ext_classification": "Leader",
+        "api_id": 20597,
+        "api_version": "v1",
+        "ext_last_active_date": "2017-01-04",
+        "int_last_active_date": "2016-12-27",
+        "user_id": 666015,
+        "int_active_status": "inactive"
+    },
+    {
+        "firstname": "Jennifer",
+        "lastname": "Aaron",
+        "specialty": "Dermatology",
+        "ext_active_status": "inactive",
+        "location": "arley",
+        "ext_classification": "Contributor",
+        "api_id": 27997,
+        "api_version": "v1",
+        "ext_last_active_date": "2016-12-31",
+        "int_last_active_date": "2017-01-17",
+        "user_id": 2615,
+        "int_active_status": "active"
+    },
+    {
+        "firstname": "Joseph",
+        "lastname": "Aaron",
+        "specialty": "Neurology",
+        "ext_active_status": "inactive",
+        "location": "coosada",
+        "ext_classification": "Lurker",
+        "api_id": 36728,
+        "api_version": "v1",
+        "ext_last_active_date": "2016-12-28",
+        "int_last_active_date": "2017-02-01",
+        "user_id": 908280,
+        "int_active_status": "active"
+    },
+    {
+        "firstname": "Anthony",
+        "lastname": "Aaron",
+        "specialty": "Family Medicine",
+        "ext_active_status": "inactive",
+        "location": "argo",
+        "ext_classification": "Contributor",
+        "api_id": 36730,
+        "api_version": "v1",
+        "ext_last_active_date": "2016-12-25",
+        "int_last_active_date": "2016-12-26",
+        "user_id": 181095,
+        "int_active_status": "inactive"
+    },
+    {
+        "firstname": "Beverly",
+        "lastname": "Aaron",
+        "specialty": "Dermatology",
+        "ext_active_status": "inactive",
+        "location": "carrollton",
+        "ext_classification": "Contributor",
+        "api_id": 42478,
+        "api_version": "v1",
+        "ext_last_active_date": "2016-12-26",
+        "int_last_active_date": "2017-01-10",
+        "user_id": 407140,
+        "int_active_status": "active"
+    },
+    {
+        "firstname": "Alfreda",
+        "lastname": "Aaron",
+        "specialty": "Family Medicine",
+        "ext_active_status": "active",
+        "location": "aliceville",
+        "ext_classification": "Leader",
+        "api_id": 47010,
+        "api_version": "v1",
+        "ext_last_active_date": "2017-01-13",
+        "int_last_active_date": "2017-01-09",
+        "user_id": 310125,
+        "int_active_status": "active"
+    },
+    {
+        "firstname": "Jolene",
+        "lastname": "Aaron",
+        "specialty": "Orthopedics",
+        "ext_active_status": "inactive",
+        "location": "bear creek",
+        "ext_classification": "Leader",
+        "api_id": 54331,
+        "api_version": "v1",
+        "ext_last_active_date": "2016-12-30",
+        "int_last_active_date": "2017-01-05",
+        "user_id": 1980,
+        "int_active_status": "active"
+    },
+    {
+        "firstname": "Megan",
+        "lastname": "Aaron",
+        "specialty": "Anesthesiology",
+        "ext_active_status": "active",
+        "location": "boaz",
+        "ext_classification": "Contributor",
+        "api_id": 54949,
+        "api_version": "v1",
+        "ext_last_active_date": "2017-02-02",
+        "int_last_active_date": "2016-12-26",
+        "user_id": 366380,
+        "int_active_status": "inactive"
+    }
+]
+
+SQL DDL: 
+CREATE TABLE active_match(
+				id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+				firstname VARCHAR(50),
+				lastname VARCHAR(50),
+				specialty VARCHAR(50),
+				location VARCHAR(50),
+				ext_classification VARCHAR(50),
+				api_id INT(11),
+				api_version VARCHAR(50),
+				ext_last_active_date DATE,
+				int_last_active_date DATE,
+				int_active_status VARCHAR(50),
+				ext_active_status VARCHAR(50),
+				user_id INT(11),
+				FOREIGN KEY fk_cat(user_id)
+				REFERENCES user(id)
+			);

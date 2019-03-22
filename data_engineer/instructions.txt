@@ -1,0 +1,18 @@
+# Clone and cd into the repo
+cd /path/to/data-engineering/
+
+# I am using Python 3.6.4 but any version of Python 3 should suffice.
+# I would suggest making a virtualenv to install dependencies.
+python3 -m venv devenv
+. devenv/bin/activate
+pip install -r requirements.txt
+
+# I prefer making scripts as configurable as possible so the script uses a configuration file.
+# I prefer using nohup for long running scripts.
+nohup python active_match.py -c v1.cfg &
+
+# View logging
+tail -f nohup.out
+
+# View final output
+cat output.txt

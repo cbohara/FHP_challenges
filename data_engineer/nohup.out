@@ -1,0 +1,167 @@
+config_file = v1.cfg
+current_date = 2017-02-02
+active_day_range = 30
+api_version = v1
+api_endpoint = http://de-tech-challenge-api.herokuapp.com/api/{}/users?page={}
+api_pages = None
+db_host = candidate-coding-challenge.dox.pub
+db_user = de_candidate
+db_password = P8MWmPPBLhhLX79n
+db_port = 3316
+db_schema = data_engineer
+sample_rows = 10
+page: 1 ext_users: 1000 int_users: 4089 active_matches: 556
+page: 2 ext_users: 1000 int_users: 4112 active_matches: 564
+page: 3 ext_users: 1000 int_users: 3946 active_matches: 595
+page: 4 ext_users: 1000 int_users: 4276 active_matches: 582
+page: 5 ext_users: 1000 int_users: 4226 active_matches: 589
+page: 6 ext_users: 1000 int_users: 4061 active_matches: 615
+page: 7 ext_users: 1000 int_users: 3649 active_matches: 582
+page: 8 ext_users: 1000 int_users: 4097 active_matches: 572
+page: 9 ext_users: 1000 int_users: 4078 active_matches: 596
+page: 10 ext_users: 1000 int_users: 4029 active_matches: 595
+page: 11 ext_users: 1000 int_users: 4279 active_matches: 569
+page: 12 ext_users: 1000 int_users: 4246 active_matches: 581
+page: 13 ext_users: 1000 int_users: 3891 active_matches: 558
+page: 14 ext_users: 1000 int_users: 3962 active_matches: 574
+page: 15 ext_users: 1000 int_users: 4093 active_matches: 593
+page: 16 ext_users: 1000 int_users: 4139 active_matches: 573
+page: 17 ext_users: 1000 int_users: 4178 active_matches: 622
+page: 18 ext_users: 1000 int_users: 4134 active_matches: 572
+page: 19 ext_users: 1000 int_users: 4373 active_matches: 581
+page: 20 ext_users: 1000 int_users: 4071 active_matches: 593
+page: 21 ext_users: 1000 int_users: 4098 active_matches: 580
+page: 22 ext_users: 1000 int_users: 4253 active_matches: 583
+page: 23 ext_users: 1000 int_users: 4246 active_matches: 573
+page: 24 ext_users: 1000 int_users: 4184 active_matches: 571
+page: 25 ext_users: 1000 int_users: 4072 active_matches: 557
+page: 26 ext_users: 1000 int_users: 4572 active_matches: 569
+page: 27 ext_users: 1000 int_users: 4144 active_matches: 562
+page: 28 ext_users: 1000 int_users: 4394 active_matches: 599
+page: 29 ext_users: 1000 int_users: 4140 active_matches: 575
+page: 30 ext_users: 1000 int_users: 3942 active_matches: 594
+page: 31 ext_users: 1000 int_users: 3965 active_matches: 567
+page: 32 ext_users: 1000 int_users: 4109 active_matches: 570
+page: 33 ext_users: 1000 int_users: 3976 active_matches: 611
+page: 34 ext_users: 1000 int_users: 3868 active_matches: 561
+page: 35 ext_users: 1000 int_users: 3794 active_matches: 581
+page: 36 ext_users: 1000 int_users: 3917 active_matches: 589
+page: 37 ext_users: 1000 int_users: 4076 active_matches: 557
+page: 38 ext_users: 1000 int_users: 4475 active_matches: 574
+page: 39 ext_users: 1000 int_users: 4067 active_matches: 586
+page: 40 ext_users: 1000 int_users: 4208 active_matches: 600
+page: 41 ext_users: 1000 int_users: 3915 active_matches: 601
+page: 42 ext_users: 1000 int_users: 4074 active_matches: 561
+page: 43 ext_users: 1000 int_users: 4024 active_matches: 584
+page: 44 ext_users: 1000 int_users: 4230 active_matches: 575
+page: 45 ext_users: 1000 int_users: 4202 active_matches: 632
+page: 46 ext_users: 1000 int_users: 3956 active_matches: 589
+page: 47 ext_users: 1000 int_users: 3986 active_matches: 551
+page: 48 ext_users: 1000 int_users: 4639 active_matches: 586
+page: 49 ext_users: 1000 int_users: 4224 active_matches: 601
+page: 50 ext_users: 1000 int_users: 3995 active_matches: 597
+page: 51 ext_users: 1000 int_users: 3771 active_matches: 567
+page: 52 ext_users: 1000 int_users: 4004 active_matches: 578
+page: 53 ext_users: 1000 int_users: 4492 active_matches: 593
+page: 54 ext_users: 1000 int_users: 4445 active_matches: 594
+page: 55 ext_users: 1000 int_users: 4349 active_matches: 566
+page: 56 ext_users: 1000 int_users: 3980 active_matches: 586
+page: 57 ext_users: 1000 int_users: 4974 active_matches: 571
+page: 58 ext_users: 1000 int_users: 4055 active_matches: 602
+page: 59 ext_users: 1000 int_users: 4807 active_matches: 577
+page: 60 ext_users: 1000 int_users: 4099 active_matches: 601
+page: 61 ext_users: 1000 int_users: 4096 active_matches: 598
+page: 62 ext_users: 1000 int_users: 5039 active_matches: 610
+page: 63 ext_users: 1000 int_users: 4705 active_matches: 565
+page: 64 ext_users: 1000 int_users: 4243 active_matches: 579
+page: 65 ext_users: 1000 int_users: 4398 active_matches: 612
+page: 66 ext_users: 1000 int_users: 4324 active_matches: 591
+page: 67 ext_users: 1000 int_users: 4169 active_matches: 575
+page: 68 ext_users: 1000 int_users: 4135 active_matches: 573
+page: 69 ext_users: 1000 int_users: 5532 active_matches: 582
+page: 70 ext_users: 1000 int_users: 4414 active_matches: 616
+page: 71 ext_users: 1000 int_users: 4250 active_matches: 590
+page: 72 ext_users: 1000 int_users: 4089 active_matches: 574
+page: 73 ext_users: 1000 int_users: 4468 active_matches: 598
+page: 74 ext_users: 1000 int_users: 4164 active_matches: 564
+page: 75 ext_users: 1000 int_users: 4080 active_matches: 548
+page: 76 ext_users: 1000 int_users: 3835 active_matches: 584
+page: 77 ext_users: 1000 int_users: 4385 active_matches: 578
+page: 78 ext_users: 1000 int_users: 4838 active_matches: 578
+page: 79 ext_users: 1000 int_users: 4069 active_matches: 566
+page: 80 ext_users: 1000 int_users: 3922 active_matches: 580
+page: 81 ext_users: 1000 int_users: 3939 active_matches: 566
+page: 82 ext_users: 1000 int_users: 4580 active_matches: 573
+page: 83 ext_users: 1000 int_users: 3928 active_matches: 596
+page: 84 ext_users: 1000 int_users: 3716 active_matches: 577
+page: 85 ext_users: 1000 int_users: 4061 active_matches: 575
+page: 86 ext_users: 1000 int_users: 3981 active_matches: 618
+page: 87 ext_users: 1000 int_users: 4095 active_matches: 582
+page: 88 ext_users: 1000 int_users: 3821 active_matches: 597
+page: 89 ext_users: 1000 int_users: 3837 active_matches: 576
+page: 90 ext_users: 1000 int_users: 4195 active_matches: 588
+page: 91 ext_users: 1000 int_users: 4092 active_matches: 575
+page: 92 ext_users: 1000 int_users: 4207 active_matches: 583
+page: 93 ext_users: 1000 int_users: 4075 active_matches: 595
+page: 94 ext_users: 1000 int_users: 5352 active_matches: 598
+page: 95 ext_users: 1000 int_users: 4260 active_matches: 593
+page: 96 ext_users: 1000 int_users: 4137 active_matches: 567
+page: 97 ext_users: 1000 int_users: 4590 active_matches: 561
+page: 98 ext_users: 1000 int_users: 4169 active_matches: 594
+page: 99 ext_users: 1000 int_users: 4068 active_matches: 577
+page: 100 ext_users: 1000 int_users: 4326 active_matches: 597
+page: 101 ext_users: 1000 int_users: 3726 active_matches: 566
+page: 102 ext_users: 1000 int_users: 4055 active_matches: 569
+page: 103 ext_users: 1000 int_users: 4101 active_matches: 591
+page: 104 ext_users: 1000 int_users: 4011 active_matches: 576
+page: 105 ext_users: 1000 int_users: 3928 active_matches: 584
+page: 106 ext_users: 1000 int_users: 4274 active_matches: 588
+page: 107 ext_users: 1000 int_users: 4539 active_matches: 575
+page: 108 ext_users: 1000 int_users: 4143 active_matches: 592
+page: 109 ext_users: 1000 int_users: 4107 active_matches: 597
+page: 110 ext_users: 1000 int_users: 4041 active_matches: 583
+page: 111 ext_users: 1000 int_users: 3838 active_matches: 564
+page: 112 ext_users: 1000 int_users: 4184 active_matches: 589
+page: 113 ext_users: 1000 int_users: 3959 active_matches: 578
+page: 114 ext_users: 1000 int_users: 3917 active_matches: 603
+page: 115 ext_users: 1000 int_users: 3793 active_matches: 586
+page: 116 ext_users: 1000 int_users: 4189 active_matches: 600
+page: 117 ext_users: 1000 int_users: 4585 active_matches: 604
+page: 118 ext_users: 1000 int_users: 4628 active_matches: 578
+page: 119 ext_users: 1000 int_users: 4685 active_matches: 549
+page: 120 ext_users: 1000 int_users: 4165 active_matches: 597
+page: 121 ext_users: 1000 int_users: 4021 active_matches: 575
+page: 122 ext_users: 1000 int_users: 3981 active_matches: 580
+page: 123 ext_users: 1000 int_users: 4118 active_matches: 595
+page: 124 ext_users: 1000 int_users: 4829 active_matches: 545
+page: 125 ext_users: 1000 int_users: 3990 active_matches: 602
+page: 126 ext_users: 1000 int_users: 4021 active_matches: 566
+page: 127 ext_users: 1000 int_users: 4081 active_matches: 612
+page: 128 ext_users: 1000 int_users: 3862 active_matches: 601
+page: 129 ext_users: 1000 int_users: 3983 active_matches: 589
+page: 130 ext_users: 1000 int_users: 3908 active_matches: 571
+page: 131 ext_users: 1000 int_users: 3946 active_matches: 587
+page: 132 ext_users: 1000 int_users: 4116 active_matches: 538
+page: 133 ext_users: 1000 int_users: 4345 active_matches: 558
+page: 134 ext_users: 1000 int_users: 4043 active_matches: 587
+page: 135 ext_users: 1000 int_users: 4126 active_matches: 584
+page: 136 ext_users: 1000 int_users: 4250 active_matches: 596
+page: 137 ext_users: 1000 int_users: 4711 active_matches: 557
+page: 138 ext_users: 1000 int_users: 4124 active_matches: 552
+page: 139 ext_users: 1000 int_users: 4121 active_matches: 561
+page: 140 ext_users: 1000 int_users: 4006 active_matches: 546
+page: 141 ext_users: 1000 int_users: 4053 active_matches: 558
+page: 142 ext_users: 1000 int_users: 4091 active_matches: 586
+page: 143 ext_users: 1000 int_users: 3792 active_matches: 607
+page: 144 ext_users: 1000 int_users: 4390 active_matches: 590
+page: 145 ext_users: 1000 int_users: 4162 active_matches: 627
+page: 146 ext_users: 1000 int_users: 4801 active_matches: 597
+page: 147 ext_users: 1000 int_users: 4364 active_matches: 568
+page: 148 ext_users: 1000 int_users: 4821 active_matches: 592
+page: 149 ext_users: 1000 int_users: 5353 active_matches: 589
+page: 150 ext_users: 1000 int_users: 4131 active_matches: 595
+page: 151 ext_users: 1000 int_users: 4012 active_matches: 586
+page: 152 ext_users: 677 int_users: 2417 active_matches: 397
+total external users: 151677
+total internal users: 756879
+total active matches: 88345
