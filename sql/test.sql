@@ -1,7 +1,3 @@
--- edit this file to answer the questions below.
--- send back the entire file, such that it can be run against a PostgreSQL 9.5+ database in the following way to produce results:
--- psql -h foohost < test.sql
-
 begin;
 
 create temporary table person (
@@ -43,15 +39,29 @@ values
   ;
 
 -- TODO 1. list living persons and all person_addresses associated with them on June 5, 2017
-
-
-
+select *
+from person p
+join person_address pa
+on p.id = pa.person_id
+where p.deceased_date is null
+and pa.from_dt <= '2017-05-05' 
+and pa.thru_dt >= '2017-05-05' or pa.thru_dt is null;
 
 -- TODO 2. list top 3 person_address records per person order by longest duration
 -- (null thru_dt should be considered todays date, and should be included in consideration)
-
-
-
+select pa_id as id, address, from_dt, thru_dt from
+(select *,
+row_number() over(partition by p_id order by day_diff desc) r
+from 
+(select p.id p_id, pa.id pa_id, address, from_dt, thru_dt,
+case
+when thru_dt is null then CURRENT_DATE - from_dt
+else thru_dt - from_dt
+end as day_diff
+from person p
+join person_address pa
+on p.id = pa.person_id) t) s
+where r <= 3;
 
 -- Given a third table person_address_current (created below), intended to contain a non-deceased person's "current" address
 -- person_address_current is intended to be kept up-to-date every day, but due to an error hasn't been updated since 2001-01-01.
@@ -77,8 +87,11 @@ insert into person_address_current (person_id, address, from_dt)
 -- a. update/insert living person's address to be current as of June 5, 2017.
 -- b. remove deceased persons from the table
 -- c. records that have not changed since January 1, 2001 should not change
+update person_address_current
+set from_dt = s.from_dt
+from (select person_id, from_dt from person_address where thru_dt is null) s
+where person_address_current.person_id = s.person_id;
 
-
-
+delete from person_address_current where person_id in (select id from person where deceased_date is not null);
 
 commit;
